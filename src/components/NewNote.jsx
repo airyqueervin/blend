@@ -33,7 +33,6 @@ class NewNote extends Component {
 
   handleSubmit = e => {
     const items = this.state.listValue.split('\n');
-    // parse the text body by new line and create a new list of items
     if (this.props.flag === 'edit') {
       this.props.updateNote(this.state.title, items, this.props.color)
     } else {

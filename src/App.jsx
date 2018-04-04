@@ -65,7 +65,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome To Blend Notes</h1>
+          <h1 className="App-title">Welcome To Air Notes</h1>
           <button className="Add-note btn" onClick={() => this.openModal('add')}>+ Add Note</button>
         </header>
         <NotesList delete={this.checkDelete} notes={this.state.notes} edit={this.editNote} />

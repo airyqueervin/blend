@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Note from './Note.jsx';
 import NewNote from './NewNote.jsx';
 import DelNote from './DelNote.jsx';
 
@@ -20,7 +19,7 @@ class Modal extends Component {
     this.setState({modal: modal, color: color})
   }
 
-  selectColor = (color) => {
+  selectColor = color => {
     this.setState({color: color});
   }
 
@@ -37,9 +36,7 @@ class Modal extends Component {
       color = '';
     }
     return (
-      // <!-- The Modal --> */
       <div id="ModalVerse" className="modal">
-        {/* <!-- Modal content --> */}
         <div className="modal-content">
           <div className="modal-color" style={{backgroundColor: color}}></div>
           <div className="modal-body"> 
